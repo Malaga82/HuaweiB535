@@ -1,4 +1,4 @@
-# HuaweiB535
+# HuaweiB535 LTE
 Huawei B535 Scripts and Stuffs
 # Scripts
 setB7+B1
