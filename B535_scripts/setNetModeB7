@@ -1,0 +1,13 @@
+#!/bin/bash
+echo "set B7"
+. "$(dirname "$0")"/base
+
+"$(dirname "$0")"/login || exit 1
+
+N=400
+
+get $URL_PREFIX/
+TOKEN=`grep csrf $DIR/$N_PRETTY.html |cut -d '"' -f 4|tail -n 1`
+echo '<?xml version="1.0" encoding="UTF-8"?><request><NetworkMode>03</NetworkMode><NetworkBand>3FFFFFFF</NetworkBand><LTEBand>0000000040</LTEBand></request>' >$DIR/net-mode.xml
+post --body-file=$DIR/net-mode.xml --header="__RequestVerificationToken:$TOKEN" --header="Content-Type: application/x-www-form-urlencoded" --header "X-Requested-With: XMLHttpRequest" $URL_PREFIX/api/net/net-mode
+#bash /home/malaga/Downloads/LTE-Router-Huawei-B618s-22d-master/setNetModeB7+B1_2

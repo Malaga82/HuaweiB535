@@ -1,0 +1,3 @@
+./setNetModeB7
+wait -n 2000
+./setNetModeB7+B1
