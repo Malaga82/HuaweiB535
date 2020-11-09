@@ -19,3 +19,6 @@ Codes for each Band as follows
 - 8000000000 B40 fdd 2300
 
 so 41 is B7 (40) + B1 (01)
+
+restart script is for "reference", don't really use it, many times it just stucks the router.
+if you want to change IP, just deactivate mobile data, wait like 30s and then activate them again.
