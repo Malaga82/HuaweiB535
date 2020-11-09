@@ -5,7 +5,7 @@ setB7+B1
 This script act as the js hack script: it first set the main band ( B7 ) and then set the main band + second band ( B7 + B1 ).
 This fix the problem that you set B7+B1 and nothing else, you'll probably get B1 as main band, which is wrong.
 
-<LTEBand>0000000041</LTEBand>
+in LTEBand TAG use see the value: 0000000041
 
 this is the exadecimal sum of codes below
 
