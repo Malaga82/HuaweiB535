@@ -1,6 +1,5 @@
 #!/bin/bash
 echo "set B7+B1"
-wait -n 2000
 
 . "$(dirname "$0")"/base
 
