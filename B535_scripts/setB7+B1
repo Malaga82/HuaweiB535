@@ -1,3 +1,4 @@
-./setNetModeB7
-wait -n 2000
-./setNetModeB7+B1
+my_dir="$(dirname $0)"
+bash $my_dir/setNetModeB7
+sleep 2
+bash $my_dir/setNetModeB7+B1
