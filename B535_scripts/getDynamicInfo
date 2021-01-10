@@ -32,6 +32,7 @@ addValue()
 
 get $URL_PREFIX/api/monitoring/traffic-statistics
 get $URL_PREFIX/api/device/signal
+get $URL_PREFIX/api/net/net-mode
 
 "$(dirname "$0")"/logout
 
@@ -52,5 +53,7 @@ addValue sinr 2
 addValue enodeb_id
 addValue band
 addValue ulbandwidth
+
+addValue LTEBand
 
 
