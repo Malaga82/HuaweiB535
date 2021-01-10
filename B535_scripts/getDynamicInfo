@@ -56,4 +56,4 @@ addValue ulbandwidth
 
 addValue LTEBand
 
-
+cat /tmp/lte/huawei/dynamicValues
